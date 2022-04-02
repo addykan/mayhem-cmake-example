@@ -16,5 +16,5 @@ RUN CC=clang CXX=clang++ cmake .
 FROM ubuntu:20.04
 
 ## TODO: Change <Path in Builder Stage>
-COPY --from= /build/fuzzme /
+COPY --from=builder /build/fuzzme /
 
